@@ -97,6 +97,7 @@ login_form.addEventListener('submit', (event) => { //event - то самое с�
 
 
     localStorage.setItem('user', JSON.stringify(user))
+    
     if (input_login.value != '') {
         login(user)
     }
@@ -104,6 +105,8 @@ login_form.addEventListener('submit', (event) => { //event - то самое с�
         login_form.textContent = 'Поле логин не может быть пустым'
         //modal_footer.style.display = 'None'
         modal_auth.style.color = 'red'
+
+        /* ДОБАВИТЬ ПОЛЕ ДЛЯ ОТОБРАЖЕНИЯ ТЕКСТА */
     }
 
 
